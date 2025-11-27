@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Global Bites | Multi-Cuisine Food Delivery</title>
+    <meta name="description" content="Browse our full menu featuring Italian, Mexican, Indian, Asian, and Caribbean dishes. Order your favorite food online.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS Preload -->
+<link rel="preload" href="../CSS/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="../CSS/style.css"></noscript>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <strong>Global Bites</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="foodwall.html">Food Wall</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contant Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            Cart <span id="cart-count" class="badge bg-primary">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<main role="main">
+    <!-- Menu Hero Banner -->
+    <section class="menu-hero">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="menu-main-title">Our Global Menu</h1>
+                    <h2 class="menu-subtitle">Discover Flavors From Around the World</h2>
+                    <div class="menu-options">
+                        <a href="#italian-menu" class="menu-option">
+                            <span class="option-icon">🍕</span>
+                            <span class="option-text">Italian</span>
+                        </a>
+                        <a href="#mexican-menu" class="menu-option">
+                            <span class="option-icon">🌮</span>
+                            <span class="option-text">Mexican</span>
+                        </a>
+                        <a href="#indian-menu" class="menu-option">
+                            <span class="option-icon">🍛</span>
+                            <span class="option-text">Indian</span>
+                        </a>
+                        <a href="#asian-menu" class="menu-option">
+                            <span class="option-icon">🍣</span>
+                            <span class="option-text">Asian</span>
+                        </a>
+                        <a href="#caribbean-menu" class="menu-option">
+                            <span class="option-icon">🍗</span>
+                            <span class="option-text">Caribbean</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Italian Cuisine Section -->
+    <section class="menu-cuisine-section" id="italian-menu">
+        <div class="cuisine-container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="cuisine-image-container">
+                        <div class="cuisine-image-placeholder">
+                            <img src="../img/MENU/italian.webp" alt="Italian Cuisine" class="dish-image">
+                        </div>
+                        <div class="cuisine-shadow"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cuisine-content">
+                        <span class="cuisine-tag">Italian Classics</span>
+                        <h2 class="cuisine-title">Authentic Italian Flavors</h2>
+                        <p class="cuisine-description">
+                            Experience the taste of Italy with our handcrafted pasta, wood-fired pizzas, 
+                            and traditional recipes passed down through generations. Each dish is prepared 
+                            with authentic ingredients and cooked to perfection.
+                        </p>
+                        
+                        <div class="menu-items">
+                            <!-- Margherita Pizza -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Margherita Pizza</h3>
+                                    <span class="item-price">$14.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Classic wood-fired pizza with San Marzano tomatoes, fresh mozzarella, basil, and extra virgin olive oil.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="1" data-name="Margherita Pizza" data-price="14.99" aria-label="Add Margherita Pizza to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Spaghetti Carbonara -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Spaghetti Carbonara</h3>
+                                    <span class="item-price">$16.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Creamy pasta with pancetta, eggs, Parmesan cheese, and black pepper.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="2" data-name="Spaghetti Carbonara" data-price="16.99" aria-label="Add Spaghetti Carbonara to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Caprese Salad -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Caprese Salad</h3>
+                                    <span class="item-price">$10.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Fresh mozzarella, tomatoes, and basil with balsamic glaze and olive oil.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="3" data-name="Caprese Salad" data-price="10.99" aria-label="Add Caprese Salad to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mexican Cuisine Section -->
+    <section class="menu-cuisine-section" id="mexican-menu">
+        <div class="cuisine-container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="cuisine-content">
+                        <span class="cuisine-tag">Mexican Favorites</span>
+                        <h2 class="cuisine-title">Vibrant Mexican Street Food</h2>
+                        <p class="cuisine-description">
+                            Dive into the bold flavors of Mexico with our authentic tacos, burritos, and fresh salsas. 
+                            Each dish is bursting with traditional spices and prepared with authentic techniques.
+                        </p>
+                        
+                        <div class="menu-items">
+                            <!-- Carne Asada Tacos -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Carne Asada Tacos</h3>
+                                    <span class="item-price">$12.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Grilled steak tacos with fresh cilantro, onions, and homemade salsa.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="4" data-name="Carne Asada Tacos" data-price="12.99" aria-label="Add Carne Asada Tacos to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Beef Burrito -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Beef Burrito</h3>
+                                    <span class="item-price">$11.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Large flour tortilla filled with seasoned beef, rice, beans, and cheese.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="5" data-name="Beef Burrito" data-price="11.99" aria-label="Add Beef Burrito to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Guacamole & Chips -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Guacamole & Chips</h3>
+                                    <span class="item-price">$8.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Fresh avocado dip with tomatoes, onions, cilantro, and crispy tortilla chips.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="6" data-name="Guacamole & Chips" data-price="8.99" aria-label="Add Guacamole & Chips to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cuisine-image-container">
+                        <div class="cuisine-image-placeholder">
+                            <img src="../img/MENU/Mexican.webp" alt="Mexican Cuisine" class="cuisine-image">
+                        </div>
+                        <div class="cuisine-shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Indian Cuisine Section -->
+    <section class="menu-cuisine-section" id="indian-menu">
+        <div class="cuisine-container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="cuisine-image-container">
+                        <div class="cuisine-image-placeholder">
+                            <img src="../img/MENU/Indian.webp" alt="Indian Cuisine" class="cuisine-image">
+                        </div>
+                        <div class="cuisine-shadow"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cuisine-content">
+                        <span class="cuisine-tag">Indian Specialties</span>
+                        <h2 class="cuisine-title">Aromatic Indian Curries</h2>
+                        <p class="cuisine-description">
+                            Experience the rich, complex flavors of India with our carefully crafted curries and traditional dishes. 
+                            Each recipe uses authentic spices and cooking methods for an unforgettable culinary journey.
+                        </p>
+                        
+                        <div class="menu-items">
+                            <!-- Butter Chicken -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Butter Chicken</h3>
+                                    <span class="item-price">$16.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Tender chicken in rich tomato sauce with cream and aromatic spices.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="7" data-name="Butter Chicken" data-price="16.99" aria-label="Add Butter Chicken to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Garlic Naan -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Garlic Naan</h3>
+                                    <span class="item-price">$4.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Soft leavened bread baked in tandoor with fresh garlic and herbs.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="8" data-name="Garlic Naan" data-price="4.99" aria-label="Add Garlic Naan to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Vegetable Biryani -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Vegetable Biryani</h3>
+                                    <span class="item-price">$13.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Fragrant rice dish with mixed vegetables and traditional Indian spices.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="9" data-name="Vegetable Biryani" data-price="13.99" aria-label="Add Vegetable Biryani to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Asian Cuisine Section -->
+    <section class="menu-cuisine-section" id="asian-menu">
+        <div class="cuisine-container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="cuisine-content">
+                        <span class="cuisine-tag">Asian Fusion</span>
+                        <h2 class="cuisine-title">Exquisite Asian Flavors</h2>
+                        <p class="cuisine-description">
+                            Discover the delicate balance of flavors in our Asian cuisine selection. 
+                            From fresh sushi to savory stir-fries, each dish represents the best of Asian culinary traditions.
+                        </p>
+                        
+                        <div class="menu-items">
+                            <!-- Dragon Roll -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Dragon Roll</h3>
+                                    <span class="item-price">$18.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Eel and cucumber inside, avocado and eel sauce on top.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="10" data-name="Dragon Roll" data-price="18.99" aria-label="Add Dragon Roll to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Ramen Bowl -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Ramen Bowl</h3>
+                                    <span class="item-price">$15.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Rich pork broth with noodles, soft-boiled egg, and chashu pork.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="11" data-name="Ramen Bowl" data-price="15.99" aria-label="Add Ramen Bowl to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Chicken Stir Fry -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Chicken Stir Fry</h3>
+                                    <span class="item-price">$14.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Wok-tossed chicken with fresh vegetables in savory sauce.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="12" data-name="Chicken Stir Fry" data-price="14.99" aria-label="Add Chicken Stir Fry to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cuisine-image-container">
+                        <div class="cuisine-image-placeholder">
+                            <img src="../img/MENU/Asian.webp" alt = "Asian Cuisine" class="cuisine-image">
+                        </div>
+                        <div class="cuisine-shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caribbean Cuisine Section -->
+    <section class="menu-cuisine-section" id="caribbean-menu">
+        <div class="cuisine-container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="cuisine-image-container">
+                        <div class="cuisine-image-placeholder">
+                            <img src="../img/MENU/Caribbean.webp" alt="Caribbean Cuisine" class="cuisine-image"> 
+                        </div>
+                        <div class="cuisine-shadow"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cuisine-content">
+                        <span class="cuisine-tag">Caribbean Delights</span>
+                        <h2 class="cuisine-title">Tropical Caribbean Flavors</h2>
+                        <p class="cuisine-description">
+                            Transport yourself to the islands with our vibrant Caribbean dishes. 
+                            Experience the perfect blend of spices, tropical fruits, and traditional cooking methods.
+                        </p>
+                        
+                        <div class="menu-items">
+                            <!-- Jerk Chicken -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Jerk Chicken</h3>
+                                    <span class="item-price">$15.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Spicy grilled chicken marinated in traditional Jamaican jerk spices.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="13" data-name="Jerk Chicken" data-price="15.99" aria-label="Add Jerk Chicken to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Coconut Rice & Peas -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Coconut Rice & Peas</h3>
+                                    <span class="item-price">$8.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Fragrant rice cooked in coconut milk with kidney beans and spices.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="14" data-name="Coconut Rice & Peas" data-price="8.99" aria-label="Add Coconut Rice & Peas to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Escovitch Fish -->
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h3 class="item-name">Escovitch Fish</h3>
+                                    <span class="item-price">$17.99</span>
+                                </div>
+                                <p class="item-description">
+                                    Fried fish topped with spicy pickled vegetables in vinegar sauce.
+                                </p>
+                                <button class="add-to-cart-btn" data-id="15" data-name="Escovitch Fish" data-price="17.99" aria-label="Add Escovitch Fish to cart">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Global Bites</h3>
+                    <p>Bringing world flavors to your doorstep since 2024.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="menu.html" class="text-white-50">Menu</a></li>
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="foodwall.html" class="text-white-50">Food Wall</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contact Info</h3>
+                    <ul class="list-unstyled">
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ info@globalbites.com</li>
+                        <li>📍 123 Food Street, Taste City</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2024 Global Bites. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="../js/script.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+</body>
+</html>
